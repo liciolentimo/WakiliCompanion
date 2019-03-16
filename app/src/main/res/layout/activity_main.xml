@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/wakili"
+        android:layout_marginTop="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_height="150dp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:hint="Email Address"
+        android:layout_width="200dp"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/txtEmail"
+        android:layout_alignLeft="@id/txtEmail"
+        android:layout_alignStart="@id/txtEmail"
+        android:hint="Password"
+        android:layout_width="200dp"
+        android:layout_height="40dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtPassword"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:textColor="@color/white"
+                android:text="Login"
+                android:layout_centerHorizontal="true"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Register Here" />
+
+</RelativeLayout>
